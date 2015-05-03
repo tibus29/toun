@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css imports -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Antoine Perhirin</title>
+
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="antoine" src="images/antoine.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="mainMenu" class="nav navbar-nav navbar-right">
+                    <li data-menuanchor="page-1"><a href="#page-1" class="current"><span class="nav-item">je suis, j'apporte</span></a></li>
+                    <li data-menuanchor="page-2"><a href="#page-2"><span class="nav-item">savoir-faire</span></a></li>
+                    <li data-menuanchor="page-3"><a href="#page-3"><span class="nav-item">portfolio</span></a></li>
+                    <li data-menuanchor="page-4"><a href="#page-4"><span class="nav-item">contact</span></a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="hero-image"></div>
+
+    <div id="fullpage">
+        <div class="section" data-anchor="page-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <h2>je suis</h2>
+                        <p>Antoine Perhirin, 34 ans.</p>
+                        <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
+                        <p>Curieux, conscencieux et m&eacute;thodique.</p>
+                        <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <h2>j'apporte</h2>
+                        <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
+                        <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
+                        <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
+                            <span class="glyphicon glyphicon-download" aria-hidden="true"></span>&nbsp;consulter mon cv
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <a class="btn btn-default btn-lg" href="#page-2" role="button">
+                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="page-2">carine</div>
+        <div class="section" data-anchor="page-3">portfolio</div>
+        <div class="section" data-anchor="page-4">contact</div>
+    </div>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
