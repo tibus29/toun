@@ -8,7 +8,8 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['home', 'skills', 'portfolio', 'contact'],
-        menu: '#mainMenu'
+        menu: '#mainMenu',
+        showActiveTooltips: true
     });
 });
 
