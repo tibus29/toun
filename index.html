@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <title>{{title}}</title>
+    <title>{{app.title}}</title>
 
 </head>
 <body>
@@ -41,6 +41,7 @@
     <div class="hero-image"></div>
 
     <div id="fullpage">
+        <!-- HOME SECTION -->
         <div class="section" data-anchor="home">
             <div class="container">
                 <div class="row">
@@ -76,13 +77,13 @@
                 </div>
             </div>
         </div>
+        <!-- SKILLS SECTION -->
         <div class="section section-white" data-anchor="skills">
             <div class="container">
-                <h1>savoir-faire</h1>
+                <h2 class="text-center">savoir-faire</h2>
                 <div class="row">
                     <div class="col-md-4" ng-repeat="skill in skills">
                         <div class="skill-item">
-
                             <div class="row">
                                 <div class="col-md-2 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
                                 <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
@@ -97,19 +98,28 @@
                 </div>
             </div>
         </div>
+        <!-- PORTFOLIO SECTION -->
         <div class="section" data-anchor="portfolio">
-            <div class="portfolio">
-                <h1>portfolio</h1>
+            <div class="container">
+                <h2 class="text-center">portfolio</h2>
             </div>
         </div>
+        <!-- CLIENTS SECTION -->
         <div class="section" data-anchor="clients">
-            <div class="portfolio">
-                <h1>clients</h1>
+            <div class="container">
+                <h2 class="text-center">clients</h2>
             </div>
         </div>
-        <div class="section" data-anchor="contact">
-            <div class="portfolio">
-                <h1>contact</h1>
+        <!-- CONTACT SECTION -->
+        <div class="section contact" data-anchor="contact">
+            <div class="container">
+                <h2 class="text-center">contact</h2>
+                <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}
+                </a>
+                <a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
+                </a>
             </div>
         </div>
     </div>

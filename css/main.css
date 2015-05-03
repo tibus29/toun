@@ -43,13 +43,8 @@ body {
 }
 
 /*
-    CONTENT
+    HOME
 */
-
-.section h1 {
-    text-align: center;
-    font-size: 25pt;
-}
 
 .hero-image {
     background: url("../images/background.jpg") no-repeat;
@@ -57,7 +52,14 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
+
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
+
+/*
+    SKILLS
+*/
 
 .section-white {
     background: rgba(255, 255, 255, 0.25);
@@ -78,4 +80,16 @@ body {
 
 .skill-item .row {
     margin-top: 5px;
+}
+
+/*
+    CONTACT
+*/
+
+.contact .container {
+    text-align: center;
+}
+
+.contact .btn {
+    width: 300px;
 }

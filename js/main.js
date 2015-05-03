@@ -20,11 +20,11 @@ var app = angular.module('tounApp', ['ngSanitize']);
 
 app.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
-    $scope.title = '';
+    $scope.app = {};
     $scope.skills = {};
 
     $http.get('data/app.json').success(function(app) {
-        $scope.title = app.title;
+        $scope.app = app;
     });
 
     $http.get('data/skills.json').success(function(skills) {
