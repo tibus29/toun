@@ -7,7 +7,7 @@
  */
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors: ['home', 'skills', 'portfolio', 'contact'],
+        anchors: ['home', 'skills', 'portfolio', 'clients', 'contact'],
         menu: '#mainMenu',
         showActiveTooltips: true
     });

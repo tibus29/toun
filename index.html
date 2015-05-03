@@ -31,6 +31,7 @@
                     <li data-menuanchor="home" class="active"><a href="#home"><span class="nav-item">je suis, j'apporte</span></a></li>
                     <li data-menuanchor="skills"><a href="#skills"><span class="nav-item">savoir-faire</span></a></li>
                     <li data-menuanchor="portfolio"><a href="#portfolio"><span class="nav-item">portfolio</span></a></li>
+                    <li data-menuanchor="clients"><a href="#clients"><span class="nav-item">clients</span></a></li>
                     <li data-menuanchor="contact"><a href="#contact"><span class="nav-item">contact</span></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -83,11 +84,11 @@
                         <div class="skill-item">
 
                             <div class="row">
-                                <div class="col-md-1 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
-                                <div class="col-md-11 title"><span ng-bind-html="skill.title"></span></div>
+                                <div class="col-md-2 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                                <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
                             </div>
                             <div class="row" ng-repeat="p in skill.content">
-                                <div class="col-md-offset-1 col-md-11">
+                                <div class="col-md-offset-2 col-md-10">
                                     <span ng-bind-html="p"></span>
                                 </div>
                             </div>
@@ -95,10 +96,22 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="section" data-anchor="portfolio">portfolio</div>
-        <div class="section" data-anchor="contact">contact</div>
+        <div class="section" data-anchor="portfolio">
+            <div class="portfolio">
+                <h1>portfolio</h1>
+            </div>
+        </div>
+        <div class="section" data-anchor="clients">
+            <div class="portfolio">
+                <h1>clients</h1>
+            </div>
+        </div>
+        <div class="section" data-anchor="contact">
+            <div class="portfolio">
+                <h1>contact</h1>
+            </div>
+        </div>
     </div>
 
     <!-- TODO : replace with .min.js versions  -->
