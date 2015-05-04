@@ -3,17 +3,6 @@
  */
 
 /**
- * FullPage.js initialization
- */
-//$(document).ready(function() {
-//    $('#fullpage').fullpage({
-//        anchors: ['home', 'skills', 'portfolio', 'clients', 'contact'],
-//        menu: '#mainMenu',
-//        showActiveTooltips: true
-//    });
-//});
-
-/**
  * AngularJS initialization
  */
 var app = angular.module('tounApp', ['ngSanitize']);

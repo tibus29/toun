@@ -140,4 +140,12 @@ body {
 
 .contact .btn {
     width: 300px;
+    background: transparent;
+    color: white;
+}
+
+.contact .btn:hover {
+    width: 300px;
+    background: white;
+    color: black;
 }
