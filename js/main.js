@@ -23,6 +23,7 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.app = {};
     $scope.skills = {};
     $scope.portfolio = {};
+    $scope.clients = {};
 
     $http.get('data/app.json').success(function(app) {
         $scope.app = app;
@@ -34,6 +35,10 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
     $http.get('data/portfolio.json').success(function(portfolio) {
         $scope.portfolio = portfolio;
+    });
+
+    $http.get('data/clients.json').success(function(clients) {
+        $scope.clients = clients;
     });
 
 }]);

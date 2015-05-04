@@ -1,0 +1,34 @@
+{
+  "baseDir": "images/clients/",
+  "items": [
+    {
+      "image": "krampouz.png",
+      "link": "http://www.krampouz.com/fr/",
+      "description" : "Krampouz"
+    },
+    {
+      "image": "danarbraz.png",
+      "link": "http://www.danarbraz.com/",
+      "description" : "Dan Ar Braz"
+    },
+    {
+      "image": "guy-cotten.png",
+      "link": "http://www.guycotten.com/",
+      "description" : "Guy Cotten - L'Abri Du Marin"
+    },
+    {
+      "image": "cci-quimper.png",
+      "link": "http://www.quimper.cci.fr/",
+      "description" : "CCI Quimper Cornouaille"
+    },
+    {
+      "image": "tennis.png",
+      "description" : "Open de tennis de Quimper"
+    },
+    {
+      "image": "saint-evarzec.png",
+      "link" : "http://www.saint-evarzec.com/",
+      "description" : "Mairie de Saint Evarzec"
+    }
+  ]
+}
