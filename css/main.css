@@ -43,35 +43,73 @@ body {
 }
 
 /*
-    HOME
+    SECTION
 */
 
-.hero-image {
-    background: url("../images/background.jpg") no-repeat;
-    background-size: cover;
+.splash-image {
     width: 100%;
     height: 100%;
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
     position: fixed;
-
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
+}
+
+.section {
+    width: 100%;
+    position: relative;
+    display: table;
+    overflow: hidden;
+}
+.section h2.title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-fullpage {
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.section-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.section-white {
+    background: rgba(255, 255, 255, 1);
+}
+
+.section-black {
+    background: rgba(0, 0, 0, 1);
+}
+
+.section-black h2 {
+    color: white;
 }
 
 /*
     SKILLS
 */
 
-.section-white {
-    background: rgba(255, 255, 255, 0.25);
-}
-
 .skill-item {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     height: 150px;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid black;
     margin-top: 10px;
+}
+
+.skill-item:hover {
+    background: black;
+    color: white;
+    border-color: white;
+    cursor: hand;
 }
 
 .skill-item .title {
@@ -80,6 +118,16 @@ body {
 
 .skill-item .row {
     margin-top: 5px;
+}
+
+/*
+    PORTFOLIO
+*/
+
+.portfolio-item {
+    border: 1px solid white;
+    margin-bottom: 25px;
+    width: 223px;
 }
 
 /*

@@ -7,9 +7,8 @@
 
     <!-- css imports -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+    <!--<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
     <title>{{app.title}}</title>
 
 </head>
@@ -38,96 +37,117 @@
         </div>
     </nav>
 
-    <div class="hero-image"></div>
+    <div class="splash-image"></div>
 
-    <div id="fullpage">
-        <!-- HOME SECTION -->
-        <div class="section" data-anchor="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
-                        <h2>je suis</h2>
-                        <p>Antoine Perhirin, 34 ans.</p>
-                        <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
-                        <p>Curieux, conscencieux et m&eacute;thodique.</p>
-                        <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
+    <!-- HOME SECTION -->
+    <section class="section section-fullpage">
+        <div class="section-content">
+            <div class="row" data-anchor="home">
+                <div class="col-md-6 col-md-offset-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>je suis</h2>
+                            <p>Antoine Perhirin, 34 ans.</p>
+                            <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
+                            <p>Curieux, conscencieux et m&eacute;thodique.</p>
+                            <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
-                        <h2>j'apporte</h2>
-                        <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
-                        <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
-                        <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>j'apporte</h2>
+                            <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
+                            <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
+                            <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px">
-                    <div class="col-md-6 col-md-offset-6">
-                        <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
-                            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;consulter mon cv
-                        </a>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-md-6">
+                            <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
+                                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;consulter mon cv
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
-                        <a class="btn btn-default btn-lg" href="#skills" role="button">
-                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                        </a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-default btn-lg" href="#skills" role="button">
+                                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- SKILLS SECTION -->
-        <div class="section section-white" data-anchor="skills">
-            <div class="container">
-                <h2 class="text-center">savoir-faire</h2>
-                <div class="row">
-                    <div class="col-md-4" ng-repeat="skill in skills">
-                        <div class="skill-item">
-                            <div class="row">
-                                <div class="col-md-2 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
-                                <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
-                            </div>
-                            <div class="row" ng-repeat="p in skill.content">
-                                <div class="col-md-offset-2 col-md-10">
-                                    <span ng-bind-html="p"></span>
-                                </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <div class="section section-white">
+        <div class="section-content">
+            <h2 class="title">savoir-faire</h2>
+            <div class="row">
+                <div class="col-md-4" ng-repeat="skill in skills">
+                    <div class="skill-item">
+                        <div class="row">
+                            <div class="col-md-2 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                            <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
+                        </div>
+                        <div class="row" ng-repeat="p in skill.content">
+                            <div class="col-md-offset-2 col-md-10">
+                                <span ng-bind-html="p"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- PORTFOLIO SECTION -->
-        <div class="section" data-anchor="portfolio">
-            <div class="container">
-                <h2 class="text-center">portfolio</h2>
-            </div>
-        </div>
-        <!-- CLIENTS SECTION -->
-        <div class="section" data-anchor="clients">
-            <div class="container">
-                <h2 class="text-center">clients</h2>
-            </div>
-        </div>
-        <!-- CONTACT SECTION -->
-        <div class="section contact" data-anchor="contact">
-            <div class="container">
-                <h2 class="text-center">contact</h2>
-                <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}
-                </a>
-                <a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
-                </a>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="section section-black">
+        <div class="section-content">
+            <h2 class="title">portfolio</h2>
+            <div class="row" ng-repeat="line in portfolio.lines">
+                <div class="col-md-3" ng-repeat="item in line">
+                    <div class="portfolio-item">
+                        <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
+                            <img class="img-responsive" src="{{portfolio.baseDir}}{{item.image}}" alt="{{item.description}}">
+                        </a>
+                        <img ng-if="item.link == undefined" class="img-responsive" src="{{portfolio.baseDir}}{{item.image}}" alt="{{item.description}}">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!--&lt;!&ndash; PORTFOLIO SECTION &ndash;&gt;-->
+    <!--<div class="row" data-anchor="portfolio">-->
+        <!--<div class="col-md-12">-->
+            <!--<h2 class="text-center">portfolio</h2>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; CLIENTS SECTION &ndash;&gt;-->
+    <!--<div class="row" data-anchor="clients">-->
+        <!--<div class="col-md-12">-->
+            <!--<h2 class="text-center">clients</h2>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; CONTACT SECTION &ndash;&gt;-->
+    <!--<div class="row text-center" data-anchor="contact">-->
+        <!--<div class="col-md-12">-->
+            <!--<h2 class="text-center">contact</h2>-->
+            <!--<a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">-->
+                <!--<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}-->
+            <!--</a>-->
+            <!--<a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">-->
+                <!--<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
     <!-- TODO : replace with .min.js versions  -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <!--<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>-->
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

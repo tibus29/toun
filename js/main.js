@@ -5,13 +5,13 @@
 /**
  * FullPage.js initialization
  */
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        anchors: ['home', 'skills', 'portfolio', 'clients', 'contact'],
-        menu: '#mainMenu',
-        showActiveTooltips: true
-    });
-});
+//$(document).ready(function() {
+//    $('#fullpage').fullpage({
+//        anchors: ['home', 'skills', 'portfolio', 'clients', 'contact'],
+//        menu: '#mainMenu',
+//        showActiveTooltips: true
+//    });
+//});
 
 /**
  * AngularJS initialization
@@ -22,6 +22,7 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.app = {};
     $scope.skills = {};
+    $scope.portfolio = {};
 
     $http.get('data/app.json').success(function(app) {
         $scope.app = app;
@@ -29,6 +30,10 @@ app.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
     $http.get('data/skills.json').success(function(skills) {
         $scope.skills = skills;
+    });
+
+    $http.get('data/portfolio.json').success(function(portfolio) {
+        $scope.portfolio = portfolio;
     });
 
 }]);
