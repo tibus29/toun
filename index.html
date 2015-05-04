@@ -81,7 +81,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <div class="section section-white">
+    <section class="section section-white">
         <div class="section-content">
             <h2 class="title">savoir-faire</h2>
             <div class="row">
@@ -100,10 +100,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- SKILLS SECTION -->
-    <div class="section section-black">
+    <section class="section section-black">
         <div class="section-content">
             <h2 class="title">portfolio</h2>
             <div class="row" ng-repeat="line in portfolio.lines">
@@ -117,10 +117,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- CLIENTS SECTION -->
-    <div class="section section-white">
+    <section class="section section-white">
         <div class="section-content">
             <h2 class="title">clients</h2>
             <div class="row">
@@ -134,10 +134,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- CONTACT SECTION -->
-    <div class="section section-black contact">
+    <section class="section section-black contact">
         <div class="section-content text-center">
             <h2 class="title">contact</h2>
             <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
@@ -147,8 +147,16 @@
                 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
             </a>
         </div>
-    </div>
+    </section>
 
+    <!-- FOOTER SECTION -->
+    <footer class="section section-white">
+        <div class="row">
+            <div class="col-md-offset-6 col-md-6">
+                <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a> | photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a</small>
+            </div>
+        </div>
+    </footer>
 
     <!-- TODO : replace with .min.js versions  -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>

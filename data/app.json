@@ -1,8 +1,18 @@
 {
   "title": "Antoine Perhirin",
-  "contact":{
-    "mail":"antoine.perhirin@orange.fr",
-    "phone":"06 85 50 54 40",
-    "phoneLink":"+33685505440"
+  "contact": {
+    "mail": "antoine.perhirin@orange.fr",
+    "phone": "06 85 50 54 40",
+    "phoneLink": "+33685505440"
+  },
+  "credits": {
+    "developer" : {
+      "name" : "Thibault PENSEC",
+      "link" : "http://fr.linkedin.com/in/thibaultpensec"
+    },
+    "photograph" : {
+      "name" : "Emilie LE COZ",
+      "link" : ""
+    }
   }
 }
