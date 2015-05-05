@@ -12,6 +12,11 @@ body {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 50pt;
+    font-weight: lighter;
+}
+
 /*
     MENU
 */
@@ -72,8 +77,6 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 50pt;
-    font-weight: lighter;
 }
 
 .section-fullpage {
