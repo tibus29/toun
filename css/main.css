@@ -2,13 +2,14 @@
     COMMON
 */
 
-body {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
+@font-face {
+    font-family: "Helvetica Neue Thin";
+    src: url('font/HelveticaNeue-Thin.otf');
 }
 
-h2 {
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+body {
+    font-family: "Helvetica Neue Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
 }
 
 /*
@@ -69,8 +70,10 @@ h2 {
 }
 .section h2.title {
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50pt;
+    font-weight: lighter;
 }
 
 .section-fullpage {
@@ -96,6 +99,15 @@ h2 {
     color: white;
 }
 
+.section a.btn {
+    background: transparent;
+    border-color: black;
+}
+
+.section a.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /*
     SKILLS
 */
@@ -116,9 +128,9 @@ h2 {
     border-color: white;
     cursor: hand;
 
-            transition: background .25s ease-in-out;
-       -moz-transition: background .25s ease-in-out;
-    -webkit-transition: background .25s ease-in-out;
+            transition: background .25s linear;
+       -moz-transition: background .25s linear;
+    -webkit-transition: background .25s linear;
 }
 
 .skill-item .title {
@@ -135,8 +147,9 @@ h2 {
 
 .portfolio-item {
     border: 1px solid white;
-    margin-bottom: 25px;
     width: 223px;
+    margin: 10px auto;
+    cursor: pointer;
 }
 
 /*
@@ -144,6 +157,7 @@ h2 {
 */
 
 .client-item {
+    cursor: pointer;
     border: 1px solid white;
     margin-bottom: 25px;
     width: 223px;
@@ -159,7 +173,7 @@ h2 {
 }
 
 .client-item img {
-    text-align: center;
+    margin: 0 auto;
 }
 
 /*
@@ -170,14 +184,14 @@ h2 {
     text-align: center;
 }
 
-.contact .btn {
+.contact a.btn {
     width: 300px;
     background: transparent;
     color: white;
+    border-color: white;
 }
 
-.contact .btn:hover {
-    width: 300px;
+.contact a.btn:hover {
     background: white;
     color: black;
 }
