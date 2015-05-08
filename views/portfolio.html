@@ -22,7 +22,7 @@
         </div>
         <div class="row">
             <div class="col-md-1 pull-left">
-                <a class="btn btn-default btn-lg" href="" role="button">
+                <a class="btn btn-default btn-lg" href="#portfolio/{{prev}}" role="button" ng-show="prev != undefined">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 </a>
             </div>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="col-md-1 pull-right">
-                <a class="btn btn-default btn-lg" href="" role="button">
+                <a class="btn btn-default btn-lg" href="#portfolio/{{next}}" role="button" ng-show="next != undefined">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 </a>
             </div>
@@ -41,7 +41,7 @@
         <div class="portfolio-content">
             <div class="row">
                 <div class="col-md-8">
-                    <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                    <img class="img-responsive" src="{{images[0]}}" alt="{{images[0]}}">
                 </div>
                 <div class="col-md-4">
                     <img class="img-responsive" src="http://lorempixel.com/g/800/400/">

@@ -12,12 +12,24 @@ tounServices.factory('App', ['$resource', function($resource) {
 
 tounServices.factory('Portfolio', ['$resource', function($resource) {
 
-    return $resource('data/:portfolioId.json', {}, {
+    return {
+        all : function() {
+            return $resource('data/portfolio.json').get();
+        },
+        findById : function(id, cb) {
+            $resource('data/portfolio.json').get(function(data) {
 
-        all: { method:'GET', params : { portfolioId : 'portfolio'} }
+                var array = [];
+                var elmt = data.items[id];
 
-    });
+                for(var d in data.items) {
+                    array.push(d);
+                }
 
+                cb(elmt, array[array.indexOf(id) + 1], array[array.indexOf(id) - 1]);
+            });
+        }
+    };
 }]);
 
 tounServices.factory('Clients', ['$resource', function($resource) {
@@ -29,7 +41,7 @@ tounServices.factory('Clients', ['$resource', function($resource) {
 tounServices.factory('Skills', ['$resource', function($resource) {
 
     return $resource('data/skills.json', {}, {
-        query: { method:'GET', isArray:true }
+        all: { method:'GET', isArray:true }
     });
 
 }]);

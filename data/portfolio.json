@@ -1,40 +1,47 @@
 {
-  "baseDir": "images/portfolio/",
   "items": {
     "guy-cotten": {
-      "image": ["guy-cotten.png"],
+      "title" : "Guy Cotten",
+      "image": ["images/portfolio/guy-cotten.png"],
       "link": "http://www.guycotten.com/",
       "description": "Guy Cotten"
     },
     "open-de-quimper": {
-      "image": ["tennis.png"],
+      "title" : "Open de tennis de Quimper",
+      "image": ["images/portfolio/tennis.png"],
       "link": "http://www.opendequimper.com/",
       "description": "L'Open de tennis de Quimper"
     },
     "krampouz": {
-      "image": ["krampouz.png"],
+      "title" : "Krampouz",
+      "image": ["images/portfolio/krampouz.png"],
       "link": "http://www.krampouz.com/fr/",
       "description": "Krampouz"
     },
     "breizh-food": {
-      "image": ["breizh-food.png"],
+      "title" : "Breizh Food",
+      "image": ["images/portfolio/breizh-food.png"],
       "description": "Breizh Food"
     },
     "les-specialites-de-notre-region": {
-      "image": ["specialite-region.png"],
+      "title" : "Les spécialités de notre région",
+      "image": ["images/portfolio/specialite-region.png"],
       "description": "Les spécialités de notre région"
     },
     "saint-evarzec-tourisme": {
-      "image": ["saint-evarzec-tourisme.png"],
+      "title" : "Saint Evarzec Tourisme",
+      "image": ["images/portfolio/saint-evarzec-tourisme.png"],
       "description": "Office de tourisme de Saint Evarzec"
     },
     "bagad-brieg": {
-      "image": ["brieg.png"],
+      "title" : "Bagad Brieg",
+      "image": ["images/portfolio/brieg.png"],
       "link": "http://www.bagadbrieg.com/",
       "description": "La nouvelle charte graphique du bagad Brieg"
     },
     "coralie": {
-      "image": ["coralie.png"],
+      "title" : "Coralie",
+      "image": ["images/portfolio/coralie.png"],
       "description": "Coralie"
     }
   }
