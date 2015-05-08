@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="tounApp" ng-controller="MainCtrl">
-<head lang="en">
-    <!-- meta -->
+<head lang="fr">
+    <!-- title -->
+    <title>Antoine Perhirin</title>
+    <!-- Common meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Site web d'Antoine Perhirin">
+    <meta name="keywords" content="graphiste,photoshop,adobe,portfolio">
+    <meta name="author" content="Antoine Perhirin">
+    <!-- Open Graph meta -->
+    <meta property="og:title" content="Antoine Perhirin">
+    <meta property="og:image" content="images/antoine.png">
+    <meta property="og:description" content="Site web d'Antoine Perhirin">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-antoine.png">
     <!-- css imports -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!--<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>{{app.title}}</title>
-
 </head>
 <body>
     <!-- Fixed navbar -->
@@ -88,7 +95,7 @@
                 <div class="col-md-4" ng-repeat="skill in skills">
                     <div class="skill-item">
                         <div class="row">
-                            <div class="col-md-2 title"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                            <div class="col-md-2 icon"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
                             <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
                         </div>
                         <div class="row" ng-repeat="p in skill.content">

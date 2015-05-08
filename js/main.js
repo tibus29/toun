@@ -16,7 +16,7 @@ $(function() {
                 }, 1000);
 
                 $('a[href*=#]:not([href=#])').parent().removeClass('active');
-                $(this).parent().addClass('active');
+                $("a[href='" + this.hash + "']").parent().addClass('active');
 
                 return false;
             }
