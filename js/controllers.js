@@ -7,29 +7,13 @@ var tounControllers = angular.module('tounControllers', []);
 /**
  * Home Controller
  */
-tounControllers.controller('HomeCtrl', ['$scope', '$http', function ($scope, $http) {
+tounControllers.controller('HomeCtrl', ['$scope', 'App', 'Skills', 'Clients', 'Portfolio',
+function ($scope, App, Skills, Clients, Portfolio) {
 
-    $scope.app = {};
-    $scope.skills = {};
-    $scope.portfolio = {};
-    $scope.clients = {};
-
-    $http.get('data/app.json').success(function (app) {
-        $scope.app = app;
-    });
-
-    $http.get('data/skills.json').success(function (skills) {
-        $scope.skills = skills;
-    });
-
-    $http.get('data/portfolio.json').success(function (portfolio) {
-        $scope.portfolio = portfolio;
-    });
-
-    $http.get('data/clients.json').success(function (clients) {
-        $scope.clients = clients;
-    });
-
+    $scope.app = App.get();
+    $scope.skills = Skills.query();
+    $scope.portfolio = Portfolio.all();
+    $scope.clients = Clients.get();
 }]);
 
 /**
@@ -37,4 +21,6 @@ tounControllers.controller('HomeCtrl', ['$scope', '$http', function ($scope, $ht
  */
 tounControllers.controller('PortfolioCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
+    $scope.title = 'Mairie de Locronan';
+    $scope.details = 'détails des travaux réalisés';
 }]);

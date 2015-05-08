@@ -30,7 +30,9 @@ $(function () {
 var tounApp = angular.module('tounApp', [
     'ngRoute',
     'ngSanitize',
-    'tounControllers'
+    'ngResource',
+    'tounControllers',
+    'tounServices'
 ]);
 
 tounApp.config(['$routeProvider', function ($routeProvider) {

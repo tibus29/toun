@@ -1,45 +1,41 @@
 {
   "baseDir": "images/portfolio/",
-  "lines": [
-    [
-      {
-        "image": "guy-cotten.png",
-        "link": "http://www.guycotten.com/",
-        "description" : "Guy Cotten"
-      },
-      {
-        "image": "tennis.png",
-        "link": "http://www.opendequimper.com/",
-        "description" : "L'Open de tennis de Quimper"
-      },
-      {
-        "image": "krampouz.png",
-        "link": "http://www.krampouz.com/fr/",
-        "description" : "Krampouz"
-      },
-      {
-        "image": "breizh-food.png",
-        "description" : "Breizh Food"
-      }
-    ],
-    [
-      {
-        "image": "specialite-region.png",
-        "description" : "Les spécialités de notre région"
-      },
-      {
-        "image": "saint-evarzec-tourisme.png",
-        "description" : "Office de tourisme de Saint Evarzec"
-      },
-      {
-        "image": "brieg.png",
-        "link": "http://www.bagadbrieg.com/",
-        "description" : "La nouvelle charte graphique du bagad Brieg"
-      },
-      {
-        "image": "coralie.png",
-        "description" : "Coralie"
-      }
-    ]
-  ]
+  "items": {
+    "guy-cotten": {
+      "image": ["guy-cotten.png"],
+      "link": "http://www.guycotten.com/",
+      "description": "Guy Cotten"
+    },
+    "open-de-quimper": {
+      "image": ["tennis.png"],
+      "link": "http://www.opendequimper.com/",
+      "description": "L'Open de tennis de Quimper"
+    },
+    "krampouz": {
+      "image": ["krampouz.png"],
+      "link": "http://www.krampouz.com/fr/",
+      "description": "Krampouz"
+    },
+    "breizh-food": {
+      "image": ["breizh-food.png"],
+      "description": "Breizh Food"
+    },
+    "les-specialites-de-notre-region": {
+      "image": ["specialite-region.png"],
+      "description": "Les spécialités de notre région"
+    },
+    "saint-evarzec-tourisme": {
+      "image": ["saint-evarzec-tourisme.png"],
+      "description": "Office de tourisme de Saint Evarzec"
+    },
+    "bagad-brieg": {
+      "image": ["brieg.png"],
+      "link": "http://www.bagadbrieg.com/",
+      "description": "La nouvelle charte graphique du bagad Brieg"
+    },
+    "coralie": {
+      "image": ["coralie.png"],
+      "description": "Coralie"
+    }
+  }
 }

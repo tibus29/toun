@@ -68,13 +68,12 @@
     <section id="portfolio" class="section section-black">
         <div class="section-content">
             <h2 class="title">portfolio</h2>
-            <div class="row" ng-repeat="line in portfolio.lines">
-                <div class="col-md-3" ng-repeat="item in line">
+            <div class="row">
+                <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
                     <div class="portfolio-item">
-                        <a ng-if="item.link != undefined" href="#portfolio/0">
-                            <img class="img-responsive" src="{{portfolio.baseDir}}{{item.image}}" alt="{{item.description}}">
+                        <a href="#portfolio/{{id}}">
+                            <img class="img-responsive" src="{{portfolio.baseDir}}{{item.image[0]}}" alt="{{item.description}}">
                         </a>
-                        <img ng-if="item.link == undefined" class="img-responsive" src="{{portfolio.baseDir}}{{item.image}}" alt="{{item.description}}">
                     </div>
                 </div>
             </div>
