@@ -10,16 +10,22 @@ var tounControllers = angular.module('tounControllers', []);
 tounControllers.controller('HomeCtrl', ['$scope', 'App', 'Skills', 'Clients', 'Portfolio',
 function ($scope, App, Skills, Clients, Portfolio) {
 
+    $scope.isLoading = true;
+
     $scope.app = App.get();
     $scope.skills = Skills.all();
     $scope.portfolio = Portfolio.all();
     $scope.clients = Clients.get();
+
+    $scope.isLoading = false;
 }]);
 
 /**
  * Portfolio Controller
  */
 tounControllers.controller('PortfolioCtrl', ['$scope', '$routeParams', 'Portfolio', function ($scope, $routeParams, Portfolio) {
+
+    $scope.isLoading = true;
 
     $scope.title = '';
     $scope.details = '';
@@ -33,5 +39,7 @@ tounControllers.controller('PortfolioCtrl', ['$scope', '$routeParams', 'Portfoli
         $scope.images = data.image;
         $scope.next = next;
         $scope.prev = prev;
+
+        $scope.isLoading = false;
     });
 }]);

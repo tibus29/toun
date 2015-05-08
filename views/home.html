@@ -1,119 +1,122 @@
 <div ng-controller="HomeCtrl">
-    <div class="splash-image"></div>
+    <div ng-if="isLoading" ng-include src="'views/spinner.html'"></div>
+    <div ng-if="!isLoading" class="animated fadeIn">
+        <div class="splash-image"></div>
 
-    <!-- HOME SECTION -->
-    <section id="home" class="section section-fullpage">
-        <div class="section-content">
-            <div class="row" data-anchor="home">
-                <div class="col-md-6 col-md-offset-6">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>je suis</h2>
-                            <p>Antoine Perhirin, 34 ans.</p>
-                            <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
-                            <p>Curieux, conscencieux et m&eacute;thodique.</p>
-                            <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>j'apporte</h2>
-                            <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
-                            <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
-                            <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-bottom: 10px">
-                        <div class="col-md-6">
-                            <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
-                                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;consulter mon cv
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-default btn-lg" href="#skills" role="button">
-                                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section section-white">
-        <div class="section-content">
-            <h2 class="title">savoir-faire</h2>
-            <div class="row">
-                <div class="col-md-4" ng-repeat="skill in skills">
-                    <div class="skill-item">
+        <!-- HOME SECTION -->
+        <section id="home" class="section section-fullpage">
+            <div class="section-content">
+                <div class="row" data-anchor="home">
+                    <div class="col-md-6 col-md-offset-6">
                         <div class="row">
-                            <div class="col-md-2 icon"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
-                            <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
+                            <div class="col-md-6">
+                                <h2>je suis</h2>
+                                <p>Antoine Perhirin, 34 ans.</p>
+                                <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
+                                <p>Curieux, conscencieux et m&eacute;thodique.</p>
+                                <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
+                            </div>
                         </div>
-                        <div class="row" ng-repeat="p in skill.content">
-                            <div class="col-md-offset-2 col-md-10">
-                                <span ng-bind-html="p"></span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>j'apporte</h2>
+                                <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
+                                <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
+                                <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 10px">
+                            <div class="col-md-6">
+                                <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
+                                    <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;consulter mon cv
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn btn-default btn-lg" href="#skills" role="button">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="section section-black">
-        <div class="section-content">
-            <h2 class="title">portfolio</h2>
-            <div class="row">
-                <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
-                    <div class="portfolio-item">
-                        <a href="#portfolio/{{id}}">
-                            <img class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
-                        </a>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section section-white">
+            <div class="section-content">
+                <h2 class="title">savoir-faire</h2>
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="skill in skills">
+                        <div class="skill-item">
+                            <div class="row">
+                                <div class="col-md-2 icon"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                                <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
+                            </div>
+                            <div class="row" ng-repeat="p in skill.content">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <span ng-bind-html="p"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CLIENTS SECTION -->
-    <section id="clients" class="section section-white">
-        <div class="section-content">
-            <h2 class="title">clients</h2>
-            <div class="row">
-                <div class="col-md-2" ng-repeat="item in clients.items">
-                    <div class="client-item">
-                        <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
-                            <img class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
-                        </a>
-                        <img ng-if="item.link == undefined" class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="section section-black">
+            <div class="section-content">
+                <h2 class="title">portfolio</h2>
+                <div class="row">
+                    <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
+                        <div class="portfolio-item">
+                            <a href="#portfolio/{{id}}">
+                                <img class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section section-black contact">
-        <div class="section-content text-center">
-            <h2 class="title">contact</h2>
-            <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}
-            </a>
-            <a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">
-                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
-            </a>
-        </div>
-    </section>
+        <!-- CLIENTS SECTION -->
+        <section id="clients" class="section section-white">
+            <div class="section-content">
+                <h2 class="title">clients</h2>
+                <div class="row">
+                    <div class="col-md-2" ng-repeat="item in clients.items">
+                        <div class="client-item">
+                            <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
+                                <img class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+                            </a>
+                            <img ng-if="item.link == undefined" class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- FOOTER SECTION -->
-    <footer class="section section-white text-right">
-        <div class="section-content">
-            <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a> | photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a></small>
-        </div>
-    </footer>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section section-black contact">
+            <div class="section-content text-center">
+                <h2 class="title">contact</h2>
+                <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}
+                </a>
+                <a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="section section-white text-right">
+            <div class="section-content">
+                <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a> | photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a></small>
+            </div>
+        </footer>
+    </div>
 </div>

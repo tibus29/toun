@@ -1,61 +1,64 @@
-<section class="section section-fullpage" ng-controller="PortfolioCtrl">
-    <div class="section-content-top" style="padding-top: 90px;">
+<div ng-controller="PortfolioCtrl">
+    <div ng-if="isLoading" ng-include src="'views/spinner.html'"></div>
+    <section ng-if="!isLoading" class="section section-fullpage animated fadeIn">
+        <div class="section-content-top" style="padding-top: 90px;">
 
-        <div class="row">
-            <div class="col-md-1 pull-left">
-                <a class="btn btn-default btn-lg" href="#home" role="button">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="col-md-10">
-                <ol class="breadcrumb">
-                    <li><a href="#home">accueil</a></li>
-                    <li><a href="#home">portfolio</a></li>
-                    <li class="active">{{title}}</li>
-                </ol>
-            </div>
-            <div class="col-md-1 pull-right">
-                <a class="btn btn-default btn-lg" href="" role="button">
-                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 pull-left">
-                <a class="btn btn-default btn-lg" href="#portfolio/{{prev}}" role="button" ng-show="prev != undefined">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div class="portfolio-head col-md-10">
-                <h1>{{title}}</h1>
-                <p>{{details}}</p>
-            </div>
-
-            <div class="col-md-1 pull-right">
-                <a class="btn btn-default btn-lg" href="#portfolio/{{next}}" role="button" ng-show="next != undefined">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-        <div class="portfolio-content">
             <div class="row">
-                <div class="col-md-8">
-                    <img class="img-responsive" src="{{images[0]}}" alt="{{images[0]}}">
+                <div class="col-md-1 pull-left">
+                    <a class="btn btn-default btn-lg" href="#home" role="button">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
-                    <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                <div class="col-md-10">
+                    <ol class="breadcrumb">
+                        <li><a href="#home">accueil</a></li>
+                        <li><a href="#home">portfolio</a></li>
+                        <li class="active">{{title}}</li>
+                    </ol>
+                </div>
+                <div class="col-md-1 pull-right">
+                    <a class="btn btn-default btn-lg" href="" role="button">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                <div class="col-md-1 pull-left">
+                    <a class="btn btn-default btn-lg" href="#portfolio/{{prev}}" role="button" ng-show="prev != undefined">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+
+                <div class="portfolio-head col-md-10">
+                    <h1>{{title}}</h1>
+                    <p>{{details}}</p>
+                </div>
+
+                <div class="col-md-1 pull-right">
+                    <a class="btn btn-default btn-lg" href="#portfolio/{{next}}" role="button" ng-show="next != undefined">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img class="img-responsive" src="{{images[0]}}" alt="{{images[0]}}">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                        <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="http://lorempixel.com/g/800/400/">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
