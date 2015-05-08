@@ -7,23 +7,27 @@ var tounControllers = angular.module('tounControllers', []);
 /**
  * Home Controller
  */
-tounControllers.controller('HomeCtrl', ['$scope', 'App', 'Skills', 'Clients', 'Portfolio',
-function ($scope, App, Skills, Clients, Portfolio) {
+tounControllers.controller('HomeCtrl', ['$scope', '$timeout', 'App', 'Skills', 'Clients', 'Portfolio',
+function ($scope, $timeout, App, Skills, Clients, Portfolio) {
 
     $scope.isLoading = true;
 
-    $scope.app = App.get();
-    $scope.skills = Skills.all();
-    $scope.portfolio = Portfolio.all();
-    $scope.clients = Clients.get();
+    $timeout(function() {
 
-    $scope.isLoading = false;
+        $scope.app = App.get();
+        $scope.skills = Skills.all();
+        $scope.portfolio = Portfolio.all();
+        $scope.clients = Clients.get();
+        $scope.isLoading = false;
+
+    }, 1000);
 }]);
 
 /**
  * Portfolio Controller
  */
-tounControllers.controller('PortfolioCtrl', ['$scope', '$routeParams', 'Portfolio', function ($scope, $routeParams, Portfolio) {
+tounControllers.controller('PortfolioCtrl', ['$scope', '$timeout', '$routeParams', 'Portfolio',
+function ($scope, $timeout, $routeParams, Portfolio) {
 
     $scope.isLoading = true;
 
@@ -33,13 +37,18 @@ tounControllers.controller('PortfolioCtrl', ['$scope', '$routeParams', 'Portfoli
     $scope.next = '';
     $scope.prev = '';
 
-    Portfolio.findById($routeParams.portfolioId, function(data, next, prev) {
-        $scope.title = data.title;
-        $scope.details = data.description;
-        $scope.images = data.image;
-        $scope.next = next;
-        $scope.prev = prev;
+    $timeout(function() {
 
-        $scope.isLoading = false;
-    });
+        Portfolio.findById($routeParams.portfolioId, function(data, next, prev) {
+            $scope.title = data.title;
+            $scope.details = data.description;
+            $scope.images = data.image;
+            $scope.next = next;
+            $scope.prev = prev;
+
+            $scope.isLoading = false;
+        });
+
+    }, 500);
+
 }]);
