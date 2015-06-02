@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-    font-size: 50pt;
+    font-size: 40pt;
     font-weight: lighter;
 }
 
@@ -148,11 +148,15 @@ h2 {
 }
 
 .skill-item .title {
-    font-size: 30pt;
+    font-size: 18pt;
+}
+
+.skill-item .content {
+    font-size: 10pt;
 }
 
 .skill-item .icon {
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 .skill-item .row {
@@ -165,9 +169,13 @@ h2 {
 
 .portfolio-item {
     border: 1px solid white;
-    width: 223px;
+    width: 180px;
     margin: 10px auto;
     cursor: pointer;
+}
+
+section.portfolio {
+    margin-top: 10%;
 }
 
 .portfolio-head {
@@ -181,10 +189,7 @@ h2 {
 
 .portfolio-content {
     width: 100%;
-}
-
-.portfolio-content .row {
-    width: 50%;
+    margin-top: 30px;
 }
 
 /*
@@ -195,7 +200,6 @@ h2 {
     cursor: pointer;
     border: 1px solid white;
     margin-bottom: 25px;
-    width: 223px;
 
     opacity: 0.5;
             transition: opacity .25s ease-in-out;

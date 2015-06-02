@@ -49,15 +49,19 @@
             <div class="section-content">
                 <h2 class="title">savoir-faire</h2>
                 <div class="row">
-                    <div class="col-md-4" ng-repeat="skill in skills">
-                        <div class="skill-item">
-                            <div class="row">
-                                <div class="col-md-2 icon"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
-                                <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
-                            </div>
-                            <div class="row" ng-repeat="p in skill.content">
-                                <div class="col-md-offset-2 col-md-10">
-                                    <span ng-bind-html="p"></span>
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-4" ng-repeat="skill in skills">
+                                <div class="skill-item">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2 icon"><span class="glyphicon glyphicon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                                        <div class="col-md-10 col-sm-10 title"><span ng-bind-html="skill.title"></span></div>
+                                    </div>
+                                    <div class="row" ng-repeat="p in skill.content">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <span class="content" ng-bind-html="p"></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,11 +75,15 @@
             <div class="section-content">
                 <h2 class="title">portfolio</h2>
                 <div class="row">
-                    <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
-                        <div class="portfolio-item">
-                            <a href="#portfolio/{{id}}">
-                                <img class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
-                            </a>
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
+                                <div class="portfolio-item">
+                                    <a href="#portfolio/{{id}}">
+                                        <img class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,12 +95,16 @@
             <div class="section-content">
                 <h2 class="title">clients</h2>
                 <div class="row">
-                    <div class="col-md-2" ng-repeat="item in clients.items">
-                        <div class="client-item">
-                            <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
-                                <img class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
-                            </a>
-                            <img ng-if="item.link == undefined" class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-2" ng-repeat="item in clients.items">
+                                <div class="client-item">
+                                    <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
+                                        <img class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+                                    </a>
+                                    <img ng-if="item.link == undefined" class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
