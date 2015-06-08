@@ -185,21 +185,26 @@ h2 {
 }
 
 section.portfolio {
-    margin-top: 10%;
+    width: 60%;
+    margin: 5% auto;
 }
 
-.portfolio-head {
+section.portfolio .portfolio-head {
     display: inline-block;
     text-align: center;
 }
 
-.portfolio-head > h1, .portfolio-head > p {
+section.portfolio .portfolio-head > h1,
+section.portfolio .portfolio-head > p {
     margin: 0;
 }
 
-.portfolio-content {
-    width: 100%;
-    margin-top: 30px;
+section.portfolio .portfolio-content {
+    margin-top: 20px;
+}
+
+section.portfolio .portfolio-content img {
+    margin-bottom: 30px;
 }
 
 /*

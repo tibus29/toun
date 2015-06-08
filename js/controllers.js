@@ -36,6 +36,7 @@ function ($scope, $timeout, $routeParams, Portfolio) {
     $scope.images = [];
     $scope.next = '';
     $scope.prev = '';
+    $scope.layout = '';
 
     $timeout(function() {
 
@@ -43,6 +44,7 @@ function ($scope, $timeout, $routeParams, Portfolio) {
             $scope.title = data.title;
             $scope.details = data.description;
             $scope.images = data.image;
+            $scope.layout = data.layout;
             $scope.next = next;
             $scope.prev = prev;
 

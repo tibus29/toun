@@ -3,7 +3,11 @@
     "open-de-quimper": {
       "title" : "Open de tennis de Quimper",
       "image": [
-        "images/portfolio/1-open.png"
+        "images/portfolio/1-open.png",
+        "",
+        "images/portfolio/1-open/open-1.png",
+        "images/portfolio/1-open/open-3.png",
+        "images/portfolio/1-open/open-2.png"
       ],
       "link": "http://www.opendequimper.com/",
       "description": "Création logo / Charte graphique - Affiche - Flyer - Chéquier - Gazette - Billetterie"
@@ -11,7 +15,12 @@
     "guy-cotten": {
       "title" : "Guy Cotten",
       "image": [
-        "images/portfolio/2-cotten.png"
+        "images/portfolio/2-cotten.png",
+        "images/portfolio/2-cotten/cotten-4.png",
+        "images/portfolio/2-cotten/cotten-1.png",
+        "",
+        "images/portfolio/2-cotten/cotten-2.png",
+        "images/portfolio/2-cotten/cotten-3.png"
       ],
       "link": "http://www.guycotten.com/",
       "description": "Catalogue - Ligne graphique papeterie - Ligne graphique annonce presse"
@@ -19,17 +28,22 @@
     "krampouz": {
       "title" : "Krampouz",
       "image": [
-        "images/portfolio/3-krampouz.png"
+        "images/portfolio/3-krampouz.png",
+        "images/portfolio/3-krampouz/krampouz-1.png",
+        "images/portfolio/3-krampouz/krampouz-2.png"
       ],
+      "layout":"vert",
       "link": "http://www.krampouz.com/fr/",
       "description": "Flyer - Plaquette - Déco salon - Webdesign site (mise à jour) et boutique"
     },
     "breizh-food": {
       "title" : "Breizh Food",
       "image": [
-        "images/portfolio/4-breizhfood.png"
+        "images/portfolio/4-breizhfood.png",
+        "images/portfolio/4-breizhfood/breizhfood-2.png",
+        "images/portfolio/4-breizhfood/breizhfood-1.png"
       ],
-      "description": "Création logo / Charte graphique – Packagin"
+      "description": "Création logo / Charte graphique – Packaging"
     },
     "fivialys" : {
       "title" : "Fivialys",
