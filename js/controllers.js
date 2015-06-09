@@ -29,8 +29,6 @@ function ($scope, $timeout, App, Skills, Clients, Portfolio) {
 tounControllers.controller('PortfolioCtrl', ['$scope', '$timeout', '$routeParams', 'Portfolio',
 function ($scope, $timeout, $routeParams, Portfolio) {
 
-    $scope.isLoading = true;
-
     $scope.title = '';
     $scope.details = '';
     $scope.images = [];
@@ -38,19 +36,12 @@ function ($scope, $timeout, $routeParams, Portfolio) {
     $scope.prev = '';
     $scope.layout = '';
 
-    $timeout(function() {
-
-        Portfolio.findById($routeParams.portfolioId, function(data, next, prev) {
-            $scope.title = data.title;
-            $scope.details = data.description;
-            $scope.images = data.image;
-            $scope.layout = data.layout;
-            $scope.next = next;
-            $scope.prev = prev;
-
-            $scope.isLoading = false;
-        });
-
-    }, 500);
-
+    Portfolio.findById($routeParams.portfolioId, function(data, next, prev) {
+        $scope.title = data.title;
+        $scope.details = data.description;
+        $scope.images = data.image;
+        $scope.layout = data.layout;
+        $scope.next = next;
+        $scope.prev = prev;
+    });
 }]);
