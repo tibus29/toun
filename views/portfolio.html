@@ -38,12 +38,34 @@
             </div>
         </div>
         <div class="portfolio-content">
-            <div class="row" ng-if="layout == 'vert'">
+            <!--
+                Single +--------+
+                       |  img1  |
+                       +--------+
+            -->
+            <div class="row" ng-if="layout == 'single'">
                 <div class="col-md-12">
-                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0" src="{{image}}" alt="{{image}}">
+                    <img class="img-responsive center-block" src="{{images[1]}}" alt="{{images[1]}}">
                 </div>
             </div>
-            <div class="row" ng-if="layout == undefined && images.length == 3">
+            <!--
+                VBox +--------+
+                     |  img1  |
+                     +--------+
+                     |  img2  |
+                     +--------+
+            -->
+            <div class="row" ng-if="layout == 'vbox'">
+                <div class="col-md-12">
+                    <img class="img-responsive center-block" ng-repeat="image in images" ng-if="$index > 0" src="{{image}}" alt="{{image}}">
+                </div>
+            </div>
+            <!--
+                HBox +--------+--------+
+                     |  img1  |  img2  |
+                     +--------+--------+
+            -->
+            <div class="row" ng-if="layout == 'hbox'">
                 <div class="col-md-6">
                     <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even" src="{{image}}" alt="{{image}}">
                 </div>
@@ -51,12 +73,67 @@
                     <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd" src="{{image}}" alt="{{image}}">
                 </div>
             </div>
-            <div class="row" ng-if="layout == undefined && images.length > 3">
+            <!--
+                Large Left +--------+----+
+                           |  img1  |img3|
+                           +--------+----+
+                           |  img2  |img4|
+                           +--------+----+
+            -->
+            <div class="row" ng-if="layout == 'large-left'">
                 <div class="col-md-8">
                     <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even" src="{{image}}" alt="{{image}}">
                 </div>
                 <div class="col-md-4">
                     <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd" src="{{image}}" alt="{{image}}">
+                </div>
+            </div>
+            <!--
+                Large Top +-----------------+
+                          |      img1       |
+                          +--------+--------+
+                          |  img2  |  img3  |
+                          +--------+--------+
+            -->
+            <div ng-if="layout == 'large-top'">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-responsive center-block" src="{{images[1]}}" alt="{{images[1]}}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 1 && $even" src="{{image}}" alt="{{image}}">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 1 && $odd" src="{{image}}" alt="{{image}}">
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Ste  +-----------------+
+                     |      img1       |
+                     +--------+--------+
+                     | img2 |img3| html|
+                     +--------+--------+
+            -->
+            <div ng-if="layout == 'ste'">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-responsive center-block" src="{{images[1]}}" alt="{{images[1]}}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{{images[2]}}" alt="{{images[2]}}">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{{images[3]}}" alt="{{images[3]}}">
+                    </div>
+                    <div class="col-md-4">
+                        <div ng-bind-html="images[4]"></div>
+                    </div>
                 </div>
             </div>
         </div>

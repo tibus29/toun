@@ -9,6 +9,7 @@
         "images/portfolio/1-open/open-3.png",
         "images/portfolio/1-open/open-2.png"
       ],
+      "layout":"large-left",
       "link": "http://www.opendequimper.com/",
       "description": "Création logo / Charte graphique - Affiche - Flyer - Chéquier - Gazette - Billetterie"
     },
@@ -22,6 +23,7 @@
         "images/portfolio/2-cotten/cotten-2.png",
         "images/portfolio/2-cotten/cotten-3.png"
       ],
+      "layout":"large-left",
       "link": "http://www.guycotten.com/",
       "description": "Catalogue - Ligne graphique papeterie - Ligne graphique annonce presse"
     },
@@ -32,7 +34,7 @@
         "images/portfolio/3-krampouz/krampouz-1.png",
         "images/portfolio/3-krampouz/krampouz-2.png"
       ],
-      "layout":"vert",
+      "layout":"vbox",
       "link": "http://www.krampouz.com/fr/",
       "description": "Flyer - Plaquette - Déco salon - Webdesign site (mise à jour) et boutique"
     },
@@ -43,130 +45,199 @@
         "images/portfolio/4-breizhfood/breizhfood-2.png",
         "images/portfolio/4-breizhfood/breizhfood-1.png"
       ],
+      "layout":"hbox",
       "description": "Création logo / Charte graphique – Packaging"
     },
     "fivialys" : {
       "title" : "Fivialys",
       "image": [
-        "images/portfolio/5-fivialys.png"
+        "images/portfolio/5-fivialys.png",
+        "images/portfolio/5-fivialys/fivialys-1.png",
+        "images/portfolio/5-fivialys/fivialys-2.png",
+        "images/portfolio/5-fivialys/fivialys-3.png"
       ],
+      "layout":"large-top",
       "link": "http://www.bagadbrieg.com/",
       "description": "Création logo (nom/baseline/sigle) Charte graphique - Papeterie - Enseigne / Signalétique"
     },
     "mairie-de-evarzec": {
       "title" : "Mairie de Saint-Évarzec",
       "image": [
-        "images/portfolio/6-ste.png"
+        "images/portfolio/6-ste.png",
+        "images/portfolio/6-ste/ste-1.png",
+        "images/portfolio/6-ste/ste-2.png",
+        "images/portfolio/6-ste/ste-3.png",
+        "<h3><b>Prix du meilleur journal communal au carrefour des communes du Finistère</b></h3><i>(intérêt des articles, modernité du graphisme et de la mise en page, qualité de l’impression)</i>."
       ],
+      "layout":"ste",
       "description": "Ligne graphique - Magazine annuel - Guides - Bulletin bimestriel"
     },
     "bagad-brieg": {
       "title" : "Bagad Brieg",
       "image": [
-        "images/portfolio/7-brieg.png"
+        "images/portfolio/7-brieg.png",
+        "images/portfolio/7-brieg/brieg-1.png",
+        "images/portfolio/7-brieg/brieg-2.png",
+        "images/portfolio/7-brieg/brieg-3.png",
+        "images/portfolio/7-brieg/brieg-4.png"
       ],
+      "layout":"hbox",
       "link": "http://www.bagadbrieg.com/",
       "description": "Ligne graphique - Affiche - CD - Webdesign responsive"
     },
     "coralie": {
       "title" : "Coralie",
       "image": [
-        "images/portfolio/8-coralie.png"
+        "images/portfolio/8-coralie.png",
+        "images/portfolio/8-coralie/coralie-1.png",
+        "images/portfolio/8-coralie/coralie-2.png",
+        "images/portfolio/8-coralie/coralie-3.png"
       ],
+      "layout":"large-top",
       "description": "Mur de tweet - Tableaux horaires – Cartographie"
     },
     "bistrot-des-sables": {
       "title" : "Bistrot des Sables",
       "image": [
-        "images/portfolio/9-sables.png"
+        "images/portfolio/9-sables.png",
+        "images/portfolio/9-sables/sables-2.png",
+        "images/portfolio/9-sables/sables-1.png",
+        "images/portfolio/9-sables/sables-3.png"
       ],
+      "layout":"large-left",
       "description": "Menus – Cartes"
     },
     "energie": {
       "title" : "Énergie, les beaux habits",
       "image": [
-        "images/portfolio/10-energie.png"
+        "images/portfolio/10-energie.png",
+        "images/portfolio/10-energie/energie-3.png",
+        "images/portfolio/10-energie/energie-1.png",
+        "",
+        "images/portfolio/10-energie/energie-2.png"
       ],
+      "layout":"hbox",
       "link":"",
       "description": "Webdesign boutique en ligne et blog"
     },
     "hotel-des-sables-blancs": {
       "title" : "Hôtel des Sables Blancs",
       "image": [
-        "images/portfolio/11-blancs.png"
+        "images/portfolio/11-blancs.png",
+        "images/portfolio/11-blancs/blancs-1.png",
+        "images/portfolio/11-blancs/blancs-2.png",
+        "images/portfolio/11-blancs/blancs-3.png",
+        "images/portfolio/11-blancs/blancs-4.png"
       ],
+      "layout":"hbox",
       "link":"http://www.hotel-les-sables-blancs.com/",
       "description": "Webdesign - Menus - Plaquette - Déco intérieure"
     },
     "piping-up": {
       "title" : "Piping Up",
       "image": [
-        "images/portfolio/12-piping.png"
+        "images/portfolio/12-piping.png",
+        "images/portfolio/12-piping/piping-1.png",
+        "images/portfolio/12-piping/piping-2.png",
+        "images/portfolio/12-piping/piping-3.png"
       ],
+      "layout":"large-top",
       "link":"http://www.pipingup.com/",
       "description": "Création logo / Charte graphique - Papeterie - Vêtements / Housses de cornemuse"
     },
     "dremmwel": {
       "title" : "Brasserie de Bretagne, Dremmwel",
       "image": [
-        "images/portfolio/13-dremmwel.png"
+        "images/portfolio/13-dremmwel.png",
+        "images/portfolio/13-dremmwel/dremmwel-2.png",
+        "images/portfolio/13-dremmwel/dremmwel-1.png"
       ],
+      "layout":"large-left",
       "link":"http://www.pipingup.com/",
       "description": "Ligne graphique - Étiquettes – packaging"
     },
     "office-de-tourisme-de-tregunc": {
       "title" : "Office du tourisme de Trégunc",
       "image": [
-        "images/portfolio/14-ott.png"
+        "images/portfolio/14-ott.png",
+        "images/portfolio/14-ott/ott-2.png",
+        "images/portfolio/14-ott/ott-1.png"
       ],
-      "link":"",
+      "layout":"hbox",
+      "link":"http://www.tregunctourisme.com/",
       "description": "Webdesign"
     },
     "katel-flora": {
       "title" : "Katel Flora",
       "image": [
-        "images/portfolio/15-katel.png"
+        "images/portfolio/15-katel.png",
+        "images/portfolio/15-katel/katel-aplat.png"
       ],
+      "layout":"single",
       "link":"http://katelflora.fr/",
       "description": "Création logo / Charte graphique - Enseigne / Signalétique"
     },
     "la-belle-vie-en-cornouaille": {
       "title" : "La belle vie en Cornouaille",
       "image": [
-        "images/portfolio/16-bellevie.png"
+        "images/portfolio/16-bellevie.png",
+        "images/portfolio/16-bellevie/bellevie-3.png",
+        "images/portfolio/16-bellevie/bellevie-1.png",
+        "",
+        "images/portfolio/16-bellevie/bellevie-2.png"
       ],
+      "layout":"large-left",
       "link":"http://labellevieencornouaille.com/",
       "description": "Webdesign – Dépliant"
     },
     "algues-et-gastronomie": {
       "title" : "Algues & Gastronomie, Christine Le Tennier",
       "image": [
-        "images/portfolio/17-algues.png"
+        "images/portfolio/17-algues.png",
+        "images/portfolio/17-algues/algues-3.png",
+        "images/portfolio/17-algues/algues-2.png",
+        "",
+        "images/portfolio/17-algues/algues-1.png"
       ],
+      "layout":"large-left",
       "link":"",
       "description": "Mise en page de livre"
     },
     "spa-escale-saint-gilles": {
       "title" : "Spa Escale Saint-Gilles",
       "image": [
-        "images/portfolio/18-spa.png"
+        "images/portfolio/18-spa.png",
+        "images/portfolio/18-spa/spa-3.png",
+        "images/portfolio/18-spa/spa-1.png",
+        "",
+        "images/portfolio/18-spa/spa-2.png"
       ],
+      "layout":"large-left",
       "link":"",
       "description": "Plaquette - Signalétique"
     },
     "mairie-de-locronan": {
       "title" : "Mairie de Locronan",
       "image": [
-        "images/portfolio/19-locronan.png"
+        "images/portfolio/19-locronan.png",
+        "images/portfolio/19-locronan/locronan-2.png",
+        "images/portfolio/19-locronan/locronan-1.png",
+        "",
+        "images/portfolio/19-locronan/locronan-3.png"
       ],
+      "layout":"hbox",
       "link":"",
       "description": "Guide culturel"
     },
     "les-moutons": {
       "title" : "Les Moutons",
       "image": [
-        "images/portfolio/20-moutons.png"
+        "images/portfolio/20-moutons.png",
+        "images/portfolio/20-moutons/moutons-1.png",
+        "images/portfolio/20-moutons/moutons-2.png",
+        "images/portfolio/20-moutons/moutons-3.png"
       ],
+      "layout":"large-top",
       "link":"",
       "description": "Création logo / Charte graphique - Enseigne / Signalétique - Menus"
     }
