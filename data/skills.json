@@ -16,21 +16,21 @@
   },
   {
     "title": "webdesign",
-    "glyphicon": "globe",
+    "glyphicon": "webdesign",
     "content": [
       "Interface graphique et ergonomie de sites internet."
     ]
   },
   {
     "title": "signal&eacute;tique",
-    "glyphicon": "alert",
+    "glyphicon": "signaletique",
     "content": [
       "Enseigne, supports d'exposition, d&eacute;coration/covering de v&eacute;hicule..."
     ]
   },
   {
     "title": "pr&eacute;presse",
-    "glyphicon": "wrench",
+    "glyphicon": "prepresse",
     "content": [
       "Pr&eacute;paration à la forme imprimante Offset et num&eacute;rique (Prinect, CTP, Colorim&eacute;trie...).",
       "Automatisation (GREP, scripts...)"
@@ -38,7 +38,7 @@
   },
   {
     "title": "divers",
-    "glyphicon": "user",
+    "glyphicon": "divers",
     "content": [
       "Conseil en communication graphique et marketing visuel.",
       "Middle management."
