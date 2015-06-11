@@ -257,3 +257,26 @@ footer .section-content {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+/*
+    ICONS
+*/
+span.icon {
+    position: relative;
+    top: 1px;
+    display: table-cell;
+    line-height: 16px;
+    height: 32px;
+    padding-left: 32px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+span.icon-download {
+    background-image: url("../images/icons/telecharge-noir.png");
+}
+
+span.icon-arrow-down {
+    background-image: url("../images/icons/fleche-bas-noir.png");
+}

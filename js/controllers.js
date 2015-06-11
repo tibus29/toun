@@ -20,7 +20,7 @@ function ($scope, $timeout, App, Skills, Clients, Portfolio) {
         $scope.clients = Clients.get();
         $scope.isLoading = false;
 
-    }, 1000);
+    }, 1);
 }]);
 
 /**
