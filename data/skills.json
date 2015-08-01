@@ -1,7 +1,7 @@
 [
   {
     "title": "&eacute;dition / print",
-    "glyphicon": "print",
+    "icon": "print",
     "content": [
       "Création, mise en page, packaging, typographie...",
       "Maitrise d'Adobe Creative Suite."
@@ -9,28 +9,28 @@
   },
   {
     "title": "logo / branding",
-    "glyphicon": "pencil",
+    "icon": "branding",
     "content": [
       "Cr&eacute;ation de logo et charte graphique."
     ]
   },
   {
     "title": "webdesign",
-    "glyphicon": "webdesign",
+    "icon": "webdesign",
     "content": [
       "Interface graphique et ergonomie de sites internet."
     ]
   },
   {
     "title": "signal&eacute;tique",
-    "glyphicon": "signaletique",
+    "icon": "signaletique",
     "content": [
       "Enseigne, supports d'exposition, d&eacute;coration/covering de v&eacute;hicule..."
     ]
   },
   {
     "title": "pr&eacute;presse",
-    "glyphicon": "prepresse",
+    "icon": "prepresse",
     "content": [
       "Pr&eacute;paration à la forme imprimante Offset et num&eacute;rique (Prinect, CTP, Colorim&eacute;trie...).",
       "Automatisation (GREP, scripts...)"
@@ -38,7 +38,7 @@
   },
   {
     "title": "divers",
-    "glyphicon": "divers",
+    "icon": "divers",
     "content": [
       "Conseil en communication graphique et marketing visuel.",
       "Middle management."

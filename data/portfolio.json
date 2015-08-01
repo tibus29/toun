@@ -109,6 +109,7 @@
     },
     "energie": {
       "title" : "Énergie, les beaux habits",
+      "image-hover": "images/portfolio/10-energie-hover.png",
       "image": [
         "images/portfolio/10-energie.png",
         "images/portfolio/10-energie/energie-3.png",

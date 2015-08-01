@@ -19,22 +19,23 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <h2>j'apporte</h2>
+                                <h2 style="margin-top: 0;">j&apos;apporte</h2>
                                 <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
                                 <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
                                 <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 10px">
+                        <div class="row">
                             <div class="col-md-6">
-                                <a class="btn btn-default btn-lg" href="data/cv.pdf" role="button" target="_blank">
-                                    <span class="icon icon-download" aria-hidden="true">consulter mon cv</span>
+                                <a class="button" href="data/cv.pdf" target="_blank">
+                                    <span class="icon icon-download" aria-hidden="true"></span>
+                                    <span class="text">consulter mon cv</span>
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <a class="btn btn-default btn-lg" href="#skills" role="button">
+                                <a class="button" href="#skills">
                                     <span class="icon icon-arrow-down" aria-hidden="true"></span>
                                 </a>
                             </div>
@@ -54,7 +55,7 @@
                             <div class="col-md-4" ng-repeat="skill in skills">
                                 <div class="skill-item">
                                     <div class="row">
-                                        <div class="col-md-2 col-sm-2 icon"><span class="icon icon-{{skill.glyphicon}}" aria-hidden="true"></span></div>
+                                        <div class="col-md-2 col-sm-2 icon"><span class="icon icon-{{skill.icon}}" aria-hidden="true"></span></div>
                                         <div class="col-md-10 col-sm-10 title"><span ng-bind-html="skill.title"></span></div>
                                     </div>
                                     <div class="row" ng-repeat="p in skill.content">
@@ -80,8 +81,16 @@
                             <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
                                 <div class="portfolio-item">
                                     <a href="#portfolio/{{id}}">
-                                        <img class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
+                                        <img ng-if="id == 'energie'" onmouseout="this.setAttribute('src', 'images/portfolio/10-energie.png')" onmouseover="this.setAttribute('src', 'images/portfolio/10-energie-hover.png')" class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
+                                        <img ng-if="id != 'energie'" class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
+
                                     </a>
+                                    <span class="title" style="
+                                        position: absolute;
+                                        bottom: 40px;
+                                        text-align: center;
+                                        width: auto;
+                                    ">{{item.title}}</span>
                                 </div>
                             </div>
                         </div>
@@ -115,11 +124,22 @@
         <section id="contact" class="section section-black contact">
             <div class="section-content text-center">
                 <h2 class="title">contact</h2>
-                <a class="btn btn-default btn-lg" href="mailto:{{app.contact.mail}}" role="button">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{app.contact.mail}}
+                <a class="button button-white large" href="mailto:{{app.contact.mail}}" role="button">
+                    <div class="button-content">
+                        <span class="icon icon-mail" aria-hidden="true"></span>
+                        <span class="text">{{app.contact.mail}}</span>
+                    </div>
                 </a>
-                <a class="btn btn-default btn-lg" href="tel:{{app.contact.phoneLink}}" role="button">
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;{{app.contact.phone}}
+                <a class="button button-white large" href="tel:{{app.contact.phoneLink}}" role="button">
+                    <div class="button-content">
+                        <span class="icon icon-tel" aria-hidden="true"></span>
+                        <span class="text">{{app.contact.phone}}</span>
+                    </div>
+                </a>
+                <a class="button button-white" href="{{app.contact.linkedin}}" target="_blank">
+                    <div class="button-content">
+                        <span class="icon icon-linkedin" aria-hidden="true"></span>
+                    </div>
                 </a>
             </div>
         </section>
