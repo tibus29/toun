@@ -84,13 +84,9 @@
                                         <img ng-if="id == 'energie'" onmouseout="this.setAttribute('src', 'images/portfolio/10-energie.png')" onmouseover="this.setAttribute('src', 'images/portfolio/10-energie-hover.png')" class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
                                         <img ng-if="id != 'energie'" class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
 
+                                        <span ng-if="item.shortTitle" class="title">{{item.shortTitle}}</span>
+                                        <span ng-if="!item.shortTitle" class="title">{{item.title}}</span>
                                     </a>
-                                    <span class="title" style="
-                                        position: absolute;
-                                        bottom: 40px;
-                                        text-align: center;
-                                        width: auto;
-                                    ">{{item.title}}</span>
                                 </div>
                             </div>
                         </div>

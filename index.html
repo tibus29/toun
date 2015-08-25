@@ -34,7 +34,7 @@
 </head>
 <body>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" ng-controller="MenuCtrl">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,11 +47,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="mainMenu" class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home"><span class="nav-item">je suis, j'apporte</span></a></li>
-                    <li><a href="#skills"><span class="nav-item">savoir-faire</span></a></li>
-                    <li><a href="#portfolio"><span class="nav-item">portfolio</span></a></li>
-                    <li><a href="#clients"><span class="nav-item">clients</span></a></li>
-                    <li><a href="#contact"><span class="nav-item">contact</span></a></li>
+                    <li ng-class="{'active': currentMenu=='home'}"><a ng-click="onMenu('home')"><span class="nav-item">je suis, j'apporte</span></a></li>
+                    <li ng-class="{'active': currentMenu=='skills'}"><a ng-click="onMenu('skills')"><span class="nav-item">savoir-faire</span></a></li>
+                    <li ng-class="{'active': currentMenu=='portfolio'}"><a ng-click="onMenu('portfolio')"><span class="nav-item">portfolio</span></a></li>
+                    <li ng-class="{'active': currentMenu=='clients'}"><a ng-click="onMenu('clients')"><span class="nav-item">clients</span></a></li>
+                    <li ng-class="{'active': currentMenu=='contact'}"><a ng-click="onMenu('contact')"><span class="nav-item">contact</span></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

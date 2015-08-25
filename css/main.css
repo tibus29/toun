@@ -37,7 +37,8 @@ h2 {
 
 .navbar-nav > li > a {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 14pt;
+    cursor: pointer;
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -64,6 +65,7 @@ h2 {
 */
 
 .splash-image {
+    z-index: -9999;
     width: 100%;
     height: 100%;
     background: url("../images/background.jpg") no-repeat;
@@ -216,6 +218,20 @@ h2 {
             filter: grayscale(0%);
 }
 
+.portfolio-item .title {
+    display: none;
+}
+
+.portfolio-item:hover .title {
+    display: block;
+    position: absolute;
+    text-align: center;
+    height: 20px;
+    bottom: 20px;
+    width: 180px;
+    color: black;
+}
+
 section.portfolio {
     width: 80%;
     margin: 100px auto;
@@ -223,6 +239,7 @@ section.portfolio {
 
 section.portfolio .breadcrumb {
     background: white;
+    font-size: 12pt;
 }
 
 section.portfolio .breadcrumb a,
@@ -247,6 +264,23 @@ section.portfolio .portfolio-content {
 section.portfolio .portfolio-content img {
     margin-bottom: 30px;
 }
+
+section.portfolio .button:hover {
+    background-color: black;
+}
+
+
+.button:hover span.icon-home { background-image: url("../images/icons/home-blanc.png"); }
+              span.icon-home { background-image: url("../images/icons/home-noir.png"); }
+
+.button:hover span.icon-fermer { background-image: url("../images/icons/fermer-blanc.png"); }
+              span.icon-fermer { background-image: url("../images/icons/fermer-noir.png"); }
+
+.button:hover span.icon-fleche-gauche { background-image: url("../images/icons/fleche-gauche-blanc.png"); }
+              span.icon-fleche-gauche { background-image: url("../images/icons/fleche-gauche-noir.png"); }
+
+.button:hover span.icon-fleche-droite { background-image: url("../images/icons/fleche-droite-blanc.png"); }
+              span.icon-fleche-droite { background-image: url("../images/icons/fleche-droite-noir.png"); }
 
 /*
     CLIENTS
@@ -282,13 +316,21 @@ section.portfolio .portfolio-content img {
     text-align: center;
 }
 
+#contact a {
+    color: white;
+}
+
+#contact a:hover {
+    color: black;
+}
+
 #contact a.large {
     margin: 0 10px;
     width: 300px;
 }
 
 #contact .icon-mail {
-    background-image: url("../images/icons/mail-noir.png");
+    background-image: url("../images/icons/mail-blanc.png");
 }
 
 #contact .button:hover .icon-mail {
@@ -397,11 +439,6 @@ span.icon-webdesign { background-image: url("../images/icons/webdesign-noir.png"
 span.icon-signaletique { background-image: url("../images/icons/signaletique-noir.png"); }
 span.icon-prepresse { background-image: url("../images/icons/prepresse-noir.png"); }
 span.icon-divers { background-image: url("../images/icons/divers-noir.png"); }
-
-span.icon-home { background-image: url("../images/icons/home-noir.png"); }
-span.icon-fermer { background-image: url("../images/icons/fermer-noir.png"); }
-span.icon-fleche-gauche { background-image: url("../images/icons/fleche-gauche-noir.png"); }
-span.icon-fleche-droite { background-image: url("../images/icons/fleche-droite-noir.png"); }
 
 span.icon-mail { background-image: url("../images/icons/mail-noir.png"); }
 span.icon-tel { background-image: url("../images/icons/tel-blanc.png"); }

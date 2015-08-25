@@ -4,11 +4,21 @@
 
 var tounControllers = angular.module('tounControllers', []);
 
+tounControllers.controller('MenuCtrl', ['$scope', 'anchorSmoothScroll', function($scope, anchorSmoothScroll) {
+
+    $scope.currentMenu = 'home';
+
+    $scope.onMenu = function(menuId) {
+        anchorSmoothScroll.scrollTo(menuId);
+        $scope.currentMenu = menuId;
+    };
+}]);
+
 /**
  * Home Controller
  */
-tounControllers.controller('HomeCtrl', ['$scope', '$routeParams', 'App', 'Skills', 'Clients', 'Portfolio',
-function ($scope, $routeParams, App, Skills, Clients, Portfolio) {
+tounControllers.controller('HomeCtrl', ['$scope', 'App', 'Skills', 'Clients', 'Portfolio',
+function ($scope, App, Skills, Clients, Portfolio) {
 
     $scope.isLoading = true;
 

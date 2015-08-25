@@ -148,6 +148,7 @@
     },
     "dremmwel": {
       "title" : "Brasserie de Bretagne, Dremmwel",
+      "shortTitle": "Dremmwel",
       "image": [
         "images/portfolio/13-dremmwel.png",
         "images/portfolio/13-dremmwel/dremmwel-2.png",
@@ -193,6 +194,7 @@
     },
     "algues-et-gastronomie": {
       "title" : "Algues & Gastronomie, Christine Le Tennier",
+      "shortTitle" : "Algues & Gastronomie",
       "image": [
         "images/portfolio/17-algues.png",
         "images/portfolio/17-algues/algues-3.png",
