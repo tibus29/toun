@@ -160,6 +160,7 @@
     },
     "office-de-tourisme-de-tregunc": {
       "title" : "Office du tourisme de Trégunc",
+      "shortTitle" : "OT",
       "image": [
         "images/portfolio/14-ott.png",
         "images/portfolio/14-ott/ott-2.png",

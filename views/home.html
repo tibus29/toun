@@ -14,29 +14,27 @@
                                 <p>Antoine Perhirin, 34 ans.</p>
                                 <p>Un cr&eacute;atif passionn&eacute; combin&eacute; d'un technicien exp&eacute;riment&eacute;.</p>
                                 <p>Curieux, conscencieux et m&eacute;thodique.</p>
-                                <p>Adepte du travail en &eacute;quipe et n&eacute;anmoins autonome.</p>
+                                <p>Adepte du travail en &eacute;quipe et autonome &agrave; la fois.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <h2 style="margin-top: 0;">j&apos;apporte</h2>
+                                <h2 style="margin-top: 0;">j&bprime;apporte</h2>
                                 <p>Ma sensiblit&eacute; graphique et mon expertise de la chaine graphique.</p>
                                 <p>13 ann&eacute;es d'exp&eacute;riences en bureau de fabrication imprimerie et signal&eacute;tique.</p>
                                 <p>5 ann&eacute;es en tant que responsable d'un studio de cr&eacute;ation / pr&eacute;presse.</p>
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-md-1">
+                                <a class="button" href="#skills">
+                                    <span class="icon icon-arrow-down" aria-hidden="true"></span>
+                                </a>
+                            </div>
                             <div class="col-md-6">
                                 <a class="button" href="data/cv.pdf" target="_blank">
                                     <span class="icon icon-download" aria-hidden="true"></span>
                                     <span class="text">consulter mon cv</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a class="button" href="#skills">
-                                    <span class="icon icon-arrow-down" aria-hidden="true"></span>
                                 </a>
                             </div>
                         </div>
@@ -55,11 +53,11 @@
                             <div class="col-md-4" ng-repeat="skill in skills">
                                 <div class="skill-item">
                                     <div class="row">
-                                        <div class="col-md-2 col-sm-2 icon"><span class="icon icon-{{skill.icon}}" aria-hidden="true"></span></div>
-                                        <div class="col-md-10 col-sm-10 title"><span ng-bind-html="skill.title"></span></div>
+                                        <div class="col-md-2 icon"><span class="icon icon-{{skill.icon}}" aria-hidden="true"></span></div>
+                                        <div class="col-md-10 title"><span ng-bind-html="skill.title"></span></div>
                                     </div>
                                     <div class="row" ng-repeat="p in skill.content">
-                                        <div class="col-md-offset-2 col-md-10">
+                                        <div class="col-md-offset-2 col-md-10" style="padding-left: 0;">
                                             <span class="content" ng-bind-html="p"></span>
                                         </div>
                                     </div>

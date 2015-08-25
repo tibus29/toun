@@ -10,6 +10,7 @@
 body {
     font-family: "Helvetica Neue Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    font-size: 12pt;
 }
 
 h2 {
@@ -37,7 +38,7 @@ h2 {
 
 .navbar-nav > li > a {
     line-height: 30px;
-    font-size: 14pt;
+    font-size: 12pt;
     cursor: pointer;
 }
 
@@ -147,7 +148,6 @@ h2 {
     color: black;
     height: 150px;
     padding: 10px;
-    border-radius: 10px;
     border: 1px solid black;
     margin-top: 10px;
 }
@@ -187,13 +187,13 @@ h2 {
 .skill-item:hover .icon.icon-divers { background-image: url(../images/icons/divers-blanc.png); }
 
 .skill-item .title {
-    font-size: 18pt;
+    font-size: 20pt;
     margin-left: 10px;
     cursor: default;
 }
 
 .skill-item .content {
-    font-size: 10pt;
+    font-size: 12pt;
     cursor: default;
 }
 
