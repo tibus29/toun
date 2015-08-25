@@ -80,4 +80,18 @@ tounApp.service('anchorSmoothScroll', function(){
 
     };
 
+    this.elementYPosition = function(eID) {
+
+        var elm = document.getElementById(eID);
+        var y = elm.offsetTop;
+        var node = elm;
+
+        while (node.offsetParent && node.offsetParent != document.body) {
+            node = node.offsetParent;
+            y += node.offsetTop;
+        }
+
+        return y;
+    };
+
 });

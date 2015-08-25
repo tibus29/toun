@@ -4,21 +4,49 @@
 
 var tounControllers = angular.module('tounControllers', []);
 
-tounControllers.controller('MenuCtrl', ['$scope', 'anchorSmoothScroll', function($scope, anchorSmoothScroll) {
+tounControllers.controller('MenuCtrl', ['$rootScope', '$scope', '$window', 'anchorSmoothScroll',
+function($rootScope, $scope, $window, anchorSmoothScroll) {
 
+    var menuList = ['home' , 'skills', 'portfolio', 'clients', 'contact'];
     $scope.currentMenu = 'home';
 
+    // user click to change menu
     $scope.onMenu = function(menuId) {
         anchorSmoothScroll.scrollTo(menuId);
         $scope.currentMenu = menuId;
     };
+
+    // listen to change menu event
+    $rootScope.$on('event:gotoMenu', function(event, menuId) {
+        $scope.onMenu(menuId);
+    });
+
+    $rootScope.$on('event:displayMenu', function(event, menuId) {
+        $scope.currentMenu = menuId;
+    });
+
+    // listen to page scroll to automatically change displayed menu
+    //TODO: place this code in a service
+    $(document).scroll(function() {
+        angular.forEach(menuList, function(menuId) {
+
+            var menuYOffset = anchorSmoothScroll.elementYPosition(menuId);
+            var pageYOffset = $window.pageYOffset;
+
+            if(menuYOffset <= pageYOffset) {
+                $scope.currentMenu = menuId;
+                $scope.$apply();
+                return;
+            }
+        });
+    });
 }]);
 
 /**
  * Home Controller
  */
-tounControllers.controller('HomeCtrl', ['$scope', 'App', 'Skills', 'Clients', 'Portfolio',
-function ($scope, App, Skills, Clients, Portfolio) {
+tounControllers.controller('HomeCtrl', ['$rootScope', '$scope', 'App', 'Skills', 'Clients', 'Portfolio',
+function ($rootScope, $scope, App, Skills, Clients, Portfolio) {
 
     $scope.isLoading = true;
 
@@ -27,6 +55,13 @@ function ($scope, App, Skills, Clients, Portfolio) {
     $scope.portfolio = Portfolio.all();
     $scope.clients = Clients.get();
     $scope.isLoading = false;
+
+    $scope.gotoMenu = function(menuId) {
+        $rootScope.$emit('event:gotoMenu', menuId);
+    };
+
+    $rootScope.$emit('event:displayMenu', 'home');
+
 }]);
 
 /**
