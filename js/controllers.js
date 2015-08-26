@@ -13,7 +13,7 @@ function($rootScope, $scope, $window, anchorSmoothScroll) {
     // user click to change menu
     $scope.onMenu = function(menuId) {
         anchorSmoothScroll.scrollTo(menuId);
-        $scope.currentMenu = menuId;
+        //$scope.currentMenu = menuId;
     };
 
     // listen to change menu event
@@ -48,20 +48,23 @@ function($rootScope, $scope, $window, anchorSmoothScroll) {
 tounControllers.controller('HomeCtrl', ['$rootScope', '$scope', 'App', 'Skills', 'Clients', 'Portfolio',
 function ($rootScope, $scope, App, Skills, Clients, Portfolio) {
 
-    $scope.isLoading = true;
-
     $scope.app = App.get();
     $scope.skills = Skills.all();
-    $scope.portfolio = Portfolio.all();
     $scope.clients = Clients.get();
-    $scope.isLoading = false;
+    $scope.portfolio = {};
+
+    Portfolio.all(function(portfolio) {
+        $scope.portfolio = portfolio;
+        angular.forEach(portfolio.items, function(item) {
+            console.log(item);
+        });
+    });
 
     $scope.gotoMenu = function(menuId) {
         $rootScope.$emit('event:gotoMenu', menuId);
     };
 
     $rootScope.$emit('event:displayMenu', 'home');
-
 }]);
 
 /**

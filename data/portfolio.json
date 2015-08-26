@@ -2,6 +2,7 @@
   "items": {
     "open-de-quimper": {
       "title" : "Open de tennis de Quimper",
+      "shortTitle": "Open de Quimper",
       "image": [
         "images/portfolio/1-open.png",
         "",
@@ -37,16 +38,6 @@
       "layout":"vbox",
       "link": "http://www.krampouz.com/fr/",
       "description": "Flyer - Plaquette - Déco salon - Webdesign site (mise à jour) et boutique"
-    },
-    "breizh-food": {
-      "title" : "Breizh Food",
-      "image": [
-        "images/portfolio/4-breizhfood.png",
-        "images/portfolio/4-breizhfood/breizhfood-2.png",
-        "images/portfolio/4-breizhfood/breizhfood-1.png"
-      ],
-      "layout":"hbox",
-      "description": "Création logo / Charte graphique – Packaging"
     },
     "fivialys" : {
       "title" : "Fivialys",
@@ -146,30 +137,6 @@
       "link":"http://www.pipingup.com/",
       "description": "Création logo / Charte graphique - Papeterie - Vêtements / Housses de cornemuse"
     },
-    "dremmwel": {
-      "title" : "Brasserie de Bretagne, Dremmwel",
-      "shortTitle": "Dremmwel",
-      "image": [
-        "images/portfolio/13-dremmwel.png",
-        "images/portfolio/13-dremmwel/dremmwel-2.png",
-        "images/portfolio/13-dremmwel/dremmwel-1.png"
-      ],
-      "layout":"large-left",
-      "link":"http://www.pipingup.com/",
-      "description": "Ligne graphique - Étiquettes – packaging"
-    },
-    "office-de-tourisme-de-tregunc": {
-      "title" : "Office du tourisme de Trégunc",
-      "shortTitle" : "OT",
-      "image": [
-        "images/portfolio/14-ott.png",
-        "images/portfolio/14-ott/ott-2.png",
-        "images/portfolio/14-ott/ott-1.png"
-      ],
-      "layout":"hbox",
-      "link":"http://www.tregunctourisme.com/",
-      "description": "Webdesign"
-    },
     "katel-flora": {
       "title" : "Katel Flora",
       "image": [
@@ -180,18 +147,27 @@
       "link":"http://katelflora.fr/",
       "description": "Création logo / Charte graphique - Enseigne / Signalétique"
     },
-    "la-belle-vie-en-cornouaille": {
-      "title" : "La belle vie en Cornouaille",
+    "breizh-food": {
+      "title" : "Breizh Food",
       "image": [
-        "images/portfolio/16-bellevie.png",
-        "images/portfolio/16-bellevie/bellevie-3.png",
-        "images/portfolio/16-bellevie/bellevie-1.png",
-        "",
-        "images/portfolio/16-bellevie/bellevie-2.png"
+        "images/portfolio/4-breizhfood.png",
+        "images/portfolio/4-breizhfood/breizhfood-2.png",
+        "images/portfolio/4-breizhfood/breizhfood-1.png"
       ],
-      "layout":"large-left",
-      "link":"http://labellevieencornouaille.com/",
-      "description": "Webdesign – Dépliant"
+      "layout":"hbox",
+      "description": "Création logo / Charte graphique – Packaging"
+    },
+    "office-de-tourisme-de-tregunc": {
+      "title" : "Office du tourisme de Trégunc",
+      "shortTitle" : "OT de Trégunc",
+      "image": [
+        "images/portfolio/14-ott.png",
+        "images/portfolio/14-ott/ott-2.png",
+        "images/portfolio/14-ott/ott-1.png"
+      ],
+      "layout":"hbox",
+      "link":"http://www.tregunctourisme.com/",
+      "description": "Webdesign"
     },
     "algues-et-gastronomie": {
       "title" : "Algues & Gastronomie, Christine Le Tennier",
@@ -207,6 +183,19 @@
       "link":"",
       "description": "Mise en page de livre"
     },
+    "la-belle-vie-en-cornouaille": {
+      "title" : "La belle vie en Cornouaille",
+      "image": [
+        "images/portfolio/16-bellevie.png",
+        "images/portfolio/16-bellevie/bellevie-3.png",
+        "images/portfolio/16-bellevie/bellevie-1.png",
+        "",
+        "images/portfolio/16-bellevie/bellevie-2.png"
+      ],
+      "layout":"large-left",
+      "link":"http://labellevieencornouaille.com/",
+      "description": "Webdesign – Dépliant"
+    },
     "spa-escale-saint-gilles": {
       "title" : "Spa Escale Saint-Gilles",
       "image": [
@@ -219,6 +208,18 @@
       "layout":"large-left",
       "link":"",
       "description": "Plaquette - Signalétique"
+    },
+    "dremmwel": {
+      "title" : "Brasserie de Bretagne, Dremmwel",
+      "shortTitle": "Dremmwel",
+      "image": [
+        "images/portfolio/13-dremmwel.png",
+        "images/portfolio/13-dremmwel/dremmwel-2.png",
+        "images/portfolio/13-dremmwel/dremmwel-1.png"
+      ],
+      "layout":"large-left",
+      "link":"http://www.pipingup.com/",
+      "description": "Ligne graphique - Étiquettes – packaging"
     },
     "mairie-de-locronan": {
       "title" : "Mairie de Locronan",
