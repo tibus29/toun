@@ -30,6 +30,18 @@ tounApp.config(['$routeProvider', function ($routeProvider) {
 
 tounApp.service('anchorSmoothScroll', function(){
 
+    var scrollListeners = [];
+
+    this.onPageScroll = function(scrollListener) {
+        scrollListeners.push(scrollListener);
+    };
+
+    window.addEventListener("scroll", function(scrollEvent) {
+        angular.forEach(scrollListeners, function(l) {
+            l(scrollEvent);
+        });
+    });
+
     this.scrollTo = function(eID) {
 
         // This scrolling function

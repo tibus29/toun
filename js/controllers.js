@@ -26,12 +26,11 @@ function($rootScope, $scope, $window, anchorSmoothScroll) {
     });
 
     // listen to page scroll to automatically change displayed menu
-    //TODO: place this code in a service
-    $(document).scroll(function() {
+    anchorSmoothScroll.onPageScroll(function(scrollEvent) {
         angular.forEach(menuList, function(menuId) {
 
             var menuYOffset = anchorSmoothScroll.elementYPosition(menuId);
-            var pageYOffset = $window.pageYOffset;
+            var pageYOffset = scrollEvent.pageY;
 
             if(menuYOffset <= pageYOffset) {
                 $scope.currentMenu = menuId;
@@ -51,14 +50,7 @@ function ($rootScope, $scope, App, Skills, Clients, Portfolio) {
     $scope.app = App.get();
     $scope.skills = Skills.all();
     $scope.clients = Clients.get();
-    $scope.portfolio = {};
-
-    Portfolio.all(function(portfolio) {
-        $scope.portfolio = portfolio;
-        angular.forEach(portfolio.items, function(item) {
-            console.log(item);
-        });
-    });
+    $scope.portfolio = Portfolio.all();
 
     $scope.gotoMenu = function(menuId) {
         $rootScope.$emit('event:gotoMenu', menuId);

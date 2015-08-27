@@ -13,10 +13,8 @@ tounServices.factory('App', ['$resource', function($resource) {
 tounServices.factory('Portfolio', ['$resource', function($resource) {
 
     return {
-        all : function(cb) {
-            $resource('data/portfolio.json').get(function(data) {
-                cb(data);
-            });
+        all : function() {
+            return $resource('data/portfolio.json').get();
         },
         findById : function(id, cb) {
             $resource('data/portfolio.json').get(function(data) {
