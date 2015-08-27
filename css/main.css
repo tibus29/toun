@@ -144,28 +144,51 @@ h2 {
 */
 
 .skill-item {
+    display: block;
+
+    height: 190px;
+    width: 300px;
+
     background: white;
     color: black;
-    height: 150px;
-    padding: 10px;
     border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 10px;
+
+    cursor: default;
 }
 
 .skill-item:hover {
     background: black;
     color: white;
     border-color: white;
-    cursor: hand;
 
             transition: background .25s linear;
        -moz-transition: background .25s linear;
     -webkit-transition: background .25s linear;
 }
 
-.skill-item .icon {
+.skill-item .top {
+    display: inline-block;
+    height: 32px;
+}
+
+.skill-item .top .icon {
+    float: left;
     width: 32px;
     height: 32px;
+}
+
+.skill-item .top .title {
+    float: left;
+    line-height: 32px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.skill-item .content {
+    font-size: 16px;
+    margin: auto 0 auto 42px;
 }
 
 .skill-item       .icon.icon-print { background-image: url(../images/icons/print-noir.png); }
@@ -185,17 +208,6 @@ h2 {
 
 .skill-item       .icon.icon-divers { background-image: url(../images/icons/divers-noir.png); }
 .skill-item:hover .icon.icon-divers { background-image: url(../images/icons/divers-blanc.png); }
-
-.skill-item .title {
-    font-size: 20pt;
-    margin-left: 10px;
-    cursor: default;
-}
-
-.skill-item .content {
-    font-size: 12pt;
-    cursor: default;
-}
 
 /*
     PORTFOLIO
