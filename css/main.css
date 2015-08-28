@@ -147,12 +147,13 @@ h2 {
     display: block;
 
     height: 190px;
-    width: 300px;
+    width: 280px;
+
+    margin: 10px auto;
 
     background: white;
     color: black;
     border: 1px solid black;
-    margin-top: 20px;
     padding: 10px;
 
     cursor: default;
@@ -180,9 +181,9 @@ h2 {
 }
 
 .skill-item .top .title {
+    font-size: 32px;
     float: left;
     line-height: 32px;
-    font-size: 36px;
     margin-left: 10px;
 }
 

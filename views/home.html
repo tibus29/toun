@@ -7,7 +7,7 @@
         <section id="home" class="section section-fullpage">
             <div class="section-content">
                 <div class="row" data-anchor="home">
-                    <div class="col-md-6 col-md-offset-6">
+                    <div class="col-lg-6 col-lg-offset-6">
                         <div class="row">
                             <div class="col-md-6">
                                 <h2>je suis</h2>
@@ -26,12 +26,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-1" style="margin-right: 10px;">
+                            <div class="col-md-6">
                                 <a class="button" ng-click="gotoMenu('skills')">
                                     <span class="icon icon-arrow-down" aria-hidden="true"></span>
                                 </a>
-                            </div>
-                            <div class="col-md-4">
                                 <a class="button" href="data/cv.pdf" target="_blank">
                                     <span class="icon icon-download" aria-hidden="true"></span>
                                     <span class="text">consulter mon cv</span>
@@ -48,9 +46,9 @@
             <div class="section-content">
                 <h2 class="title">savoir-faire</h2>
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                         <div class="row">
-                            <div class="col-md-4" ng-repeat="skill in skills">
+                            <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="skill in skills">
                                 <div class="skill-item">
                                     <div class="top">
                                         <span class="icon icon-{{skill.icon}}" aria-hidden="true"></span>
@@ -74,7 +72,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="row">
-                            <div class="col-md-3" ng-repeat="(id,item) in portfolio.items">
+                            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="(id,item) in portfolio.items">
                                 <div class="portfolio-item">
                                     <a href="#portfolio/{{id}}">
                                         <img ng-if="id == 'energie'" onmouseout="this.setAttribute('src', 'images/portfolio/10-energie.png')" onmouseover="this.setAttribute('src', 'images/portfolio/10-energie-hover.png')" class="img-responsive" src="{{item.image[0]}}" alt="{{item.description}}">
@@ -98,7 +96,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="row">
-                            <div class="col-md-2" ng-repeat="item in clients.items">
+                            <div class="col-xs-6 col-sm-4 col-md-2" ng-repeat="item in clients.items">
                                 <div class="client-item">
                                     <a ng-if="item.link != undefined" href="{{item.link}}" target="_blank">
                                         <img class="img-responsive" src="{{clients.baseDir}}{{item.image}}" alt="{{item.description}}">
@@ -137,9 +135,25 @@
         </section>
 
         <!-- FOOTER SECTION -->
-        <footer class="section section-white text-right">
-            <div class="section-content">
-                <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a> | photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a></small>
+        <footer class="section section-white">
+            <div class="section-content visible-md visible-lg text-right">
+                <div class="row">
+                    <div class="col-md-6 pull-right">
+                        <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a> | photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a></small>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content visible-xs visible-sm text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <small>développement : <a href="{{app.credits.developer.link}}" target="_blank">{{app.credits.developer.name}}</a></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <small>photo portrait : <a href="{{app.credits.photograph.link}}" target="_blank">{{app.credits.photograph.name}}</a></small>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
