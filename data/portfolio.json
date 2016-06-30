@@ -6,9 +6,11 @@
       "image": [
         "images/portfolio/1-open.png",
         "",
-        "images/portfolio/1-open/open-1.png",
+        "images/portfolio/1-open/open-1.jpg",
+
         "images/portfolio/1-open/open-3.png",
-        "images/portfolio/1-open/open-2.png"
+        "images/portfolio/1-open/open-2.png",
+        "images/portfolio/1-open/open-1.png"
       ],
       "layout":"large-left",
       "link": "http://www.opendequimper.com/",
@@ -70,7 +72,9 @@
         "images/portfolio/7-brieg/brieg-1.png",
         "images/portfolio/7-brieg/brieg-2.png",
         "images/portfolio/7-brieg/brieg-3.png",
-        "images/portfolio/7-brieg/brieg-4.png"
+        "images/portfolio/7-brieg/brieg-4.png",
+        "",
+        "images/portfolio/7-brieg/brieg-5.jpg"
       ],
       "layout":"hbox",
       "link": "http://www.bagadbrieg.com/",
@@ -93,7 +97,8 @@
         "images/portfolio/9-sables.png",
         "images/portfolio/9-sables/sables-2.png",
         "images/portfolio/9-sables/sables-1.png",
-        "images/portfolio/9-sables/sables-3.png"
+        "images/portfolio/9-sables/sables-3.png",
+        "images/portfolio/9-sables/sables-4.jpg"
       ],
       "layout":"large-left",
       "description": "Menus – Cartes"

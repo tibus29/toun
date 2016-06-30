@@ -51,6 +51,7 @@ function ($rootScope, $scope, App, Skills, Clients, Portfolio) {
     $scope.skills = Skills.all();
     $scope.clients = Clients.get();
     $scope.portfolio = Portfolio.all();
+    $scope.nbYears = new Date().getFullYear() - 2002;
 
     $scope.gotoMenu = function(menuId) {
         $rootScope.$emit('event:gotoMenu', menuId);
