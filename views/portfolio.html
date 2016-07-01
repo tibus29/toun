@@ -67,10 +67,15 @@
             -->
             <div class="row" ng-if="layout == 'hbox'">
                 <div class="col-md-6">
-                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even" src="{{image}}" alt="{{image}}">
+                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even && !(images.length % 2 > 0 && $index == images.length-1)" src="{{image}}" alt="{{image}}">
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd" src="{{image}}" alt="{{image}}">
+                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd && !(images.length % 2 > 0 && $index == images.length-1)" src="{{image}}" alt="{{image}}">
+                </div>
+                <div class="col-md-12" ng-if="images.length % 2 > 0">
+                    <div class="col-md-offset-2 col-md-8">
+                        <img class="img-responsive" ng-repeat="image in images" ng-if="$index == images.length-1" src="{{image}}" alt="{{image}}">
+                    </div>
                 </div>
             </div>
             <!--
@@ -82,10 +87,10 @@
             -->
             <div class="row" ng-if="layout == 'large-left'">
                 <div class="col-md-8">
-                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even" src="{{image}}" alt="{{image}}">
+                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $even && !image.startsWith('empty')" src="{{image}}" alt="{{image}}">
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd" src="{{image}}" alt="{{image}}">
+                    <img class="img-responsive" ng-repeat="image in images" ng-if="$index > 0 && $odd && !image.startsWith('empty')" src="{{image}}" alt="{{image}}">
                 </div>
             </div>
             <!--

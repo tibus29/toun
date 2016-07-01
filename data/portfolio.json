@@ -5,12 +5,12 @@
       "shortTitle": "Open de Quimper",
       "image": [
         "images/portfolio/1-open.png",
-        "",
+        "images/portfolio/1-open/open-4.png",
         "images/portfolio/1-open/open-1.jpg",
-
-        "images/portfolio/1-open/open-3.png",
+        "empty-1",
         "images/portfolio/1-open/open-2.png",
-        "images/portfolio/1-open/open-1.png"
+        "empty-2",
+        "images/portfolio/1-open/open-3.png"
       ],
       "layout":"large-left",
       "link": "http://www.opendequimper.com/",
@@ -97,8 +97,7 @@
         "images/portfolio/9-sables.png",
         "images/portfolio/9-sables/sables-2.png",
         "images/portfolio/9-sables/sables-1.png",
-        "images/portfolio/9-sables/sables-3.png",
-        "images/portfolio/9-sables/sables-4.jpg"
+        "images/portfolio/9-sables/sables-3.png"
       ],
       "layout":"large-left",
       "description": "Menus – Cartes"
@@ -124,7 +123,9 @@
         "images/portfolio/11-blancs/blancs-1.png",
         "images/portfolio/11-blancs/blancs-2.png",
         "images/portfolio/11-blancs/blancs-3.png",
-        "images/portfolio/11-blancs/blancs-4.png"
+        "images/portfolio/11-blancs/blancs-4.png",
+        "",
+        "images/portfolio/11-blancs/blancs-5.jpg"
       ],
       "layout":"hbox",
       "link":"http://www.hotel-les-sables-blancs.com/",
